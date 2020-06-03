@@ -1,0 +1,34 @@
+import ZoomLink from '../components/zoom-link';
+import zoomStyles from './index.module.css';
+
+# Zoom Meetings
+
+## Frequent meetings
+
+<div className={zoomStyles.container}>
+  <ZoomLink name="Person 1" mid="123456789" pwd="aaabbb" />
+  <ZoomLink name="P1" mid="123-456-7891" pwd="aaa-bbb" />
+</div>
+
+## Sometimes
+
+<div className={zoomStyles.container}>
+  <ZoomLink
+    name="Person 3"
+    mid="123-456-7891"
+    pwd="aaa-bbb"
+    domain="company.zoom.us"
+  />
+</div>
+
+### My info
+
+- https://DOMAIN.zoom.us/j/ID
+  <dl>
+    <dt>Personal Meeting ID</dt>
+    <dd>ID</dd>
+    <dt>Host</dt>
+    <dd>hostPWD</dd>
+    <dt>Pass</dt>
+    <dd>guestPWD</dd>
+  </dl>

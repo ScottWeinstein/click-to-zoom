@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.container div {
+  flex: 0 5%;
+  border: 1px black solid;
+  padding: 5px;
+  margin: 5px;
+}
+
+.container div a {
+  display: block;
+}
+
+.container div small {
+  font-size: 0.5rem;
+}
