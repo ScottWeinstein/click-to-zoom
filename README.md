@@ -3,13 +3,18 @@ A tool for joining zoom calls with a click (or two)
 ## Setup
 
 1. [Node](https://nodejs.org/) v12+
-2. clone this repo
-3. `npm install`
-4. `gatsby develop`
-5. edit `gatsby-config.js` - set the `zoomDomain` as needed
-6. edit `index.mdx` add the meetings your need
-7. open http://localhost:8000/
-8. click to zoom as needed
+1. clone this repo
+1. `npm install`
+1. edit `gatsby-config.js` - set the `zoomDomain` as needed
+1. edit `index.mdx` add the meetings your need
+1. `npm start`
+
+## How to use it
+
+1. open http://localhost:8000/
+1. Click the link of the meeting you want to join
+2. Click **Open Zoom Meeting** on the browser pop-up
+3. Paste the password (which is copied by click-to-zoom for you) into the zoom password prompt
 
 ## limitations
 
