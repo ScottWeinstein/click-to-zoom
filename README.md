@@ -18,4 +18,4 @@ A tool for joining zoom calls with a click (or two)
 
 ## limitations
 
-1. Zoom meetings with custom ids don't work. Instead click the buttons to copy the id/pwd as needed. (fixes welcome!)
+1. Zoom meetings with custom ids don't open a new browser tab. Instead click the buttons to copy the id/pwd as needed. (fixes welcome!)

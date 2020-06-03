@@ -32,14 +32,18 @@ const ZoomLink = (p: IZoomLinkProps) => {
   const meetingPostfix = p.mid.substring(p.mid.length - 5);
   const domain = p.domain || data.site.siteMetadata.zoomDomain;
   const iscustom = isNaN(Number(id));
-  const zoomUrl = `zoommtg://${domain}/join?confno=${id}?pwd=${pwd}`;
+  const zoomUrl = iscustom
+    ? `https://goldmansachs.zoom.us/my/${id}`
+    : `zoommtg://${domain}/join?confno=${id}`;
   const copyId = (e) => navigator.clipboard.writeText(id);
   const copyPwd = (e) => navigator.clipboard.writeText(pwd);
   return (
     <div className={p.className}>
       {iscustom ? (
         <>
-          {p.name}
+          <a href={zoomUrl} onClick={copyPwd} target="_blank">
+            {p.name}
+          </a>
           <button onClick={copyId}>cpy id {id}</button>
           <button onClick={copyPwd}>cpy pwd {pwd}</button>
         </>
