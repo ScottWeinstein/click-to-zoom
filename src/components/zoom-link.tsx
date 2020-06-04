@@ -33,8 +33,8 @@ const ZoomLink = (p: IZoomLinkProps) => {
   const domain = p.domain || data.site.siteMetadata.zoomDomain;
   const iscustom = isNaN(Number(id));
   const zoomUrl = iscustom
-    ? `https://goldmansachs.zoom.us/my/${id}`
-    : `zoommtg://${domain}/join?confno=${id}`;
+    ? `https://goldmansachs.zoom.us/my/${id}?pwd=${pwd}`
+    : `zoommtg://${domain}/join?confno=${id}?pwd=${pwd}`;
   const copyId = (e) => navigator.clipboard.writeText(id);
   const copyPwd = (e) => navigator.clipboard.writeText(pwd);
   return (
