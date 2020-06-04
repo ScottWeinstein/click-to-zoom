@@ -31,15 +31,15 @@ const ZoomLink = (p: IZoomLinkProps) => {
   const pwd = p.pwd.replace(/-/g, '');
   const meetingPostfix = p.mid.substring(p.mid.length - 5);
   const domain = p.domain || data.site.siteMetadata.zoomDomain;
-  const iscustom = isNaN(Number(id));
-  const zoomUrl = iscustom
+  const isCustom = isNaN(Number(id));
+  const zoomUrl = isCustom
     ? `https://goldmansachs.zoom.us/my/${id}?pwd=${pwd}`
     : `zoommtg://${domain}/join?confno=${id}?pwd=${pwd}`;
   const copyId = (e) => navigator.clipboard.writeText(id);
   const copyPwd = (e) => navigator.clipboard.writeText(pwd);
   return (
     <div className={p.className}>
-      {iscustom ? (
+      {isCustom ? (
         <>
           <a href={zoomUrl} onClick={copyPwd} target="_blank">
             {p.name}
