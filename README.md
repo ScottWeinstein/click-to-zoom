@@ -1,5 +1,7 @@
 A tool for joining zoom calls with a click (or two)
 
+![](screencap.gif)
+
 ## Setup
 
 1. [Node](https://nodejs.org/) v12+
@@ -13,8 +15,8 @@ A tool for joining zoom calls with a click (or two)
 
 1. open http://localhost:8000/
 1. Click the link of the meeting you want to join
-2. Click **Open Zoom Meeting** on the browser pop-up
-3. Paste the password (which is copied by click-to-zoom for you) into the zoom password prompt
+1. Click **Open Zoom Meeting** on the browser pop-up
+1. Paste the password (which is copied by click-to-zoom for you) into the zoom password prompt
 
 ## limitations
 
