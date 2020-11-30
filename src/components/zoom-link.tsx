@@ -42,7 +42,7 @@ const ZoomLink = (p: IZoomLinkProps) => {
   const copyPwd = (e) => navigator.clipboard.writeText(pwd);
   return (
     <div className={p.className}>
-      {iscustom ? (
+      {isCustom ? (
         <>
           <a href={zoomUrl} onClick={copyPwd} target="_blank">
             {p.name}
